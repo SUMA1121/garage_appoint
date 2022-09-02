@@ -20,6 +20,8 @@ import { AppointmentsBookedComponent } from './appointments-booked/appointments-
 import { FeedbackComponent } from './feedback/feedback.component';
 import { CheckAppointmentsComponent } from './check-appointments/check-appointments.component';
 import { FeedbackAdminComponent } from './feedback-admin/feedback-admin.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 
 @NgModule({
@@ -40,13 +42,15 @@ import { FeedbackAdminComponent } from './feedback-admin/feedback-admin.componen
     FeedbackComponent,
     CheckAppointmentsComponent,
     FeedbackAdminComponent,
+    ResetPasswordComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

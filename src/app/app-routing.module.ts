@@ -11,6 +11,7 @@ import { GarageAreasComponent } from './garage-areas/garage-areas.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NewAppointmentComponent } from './new-appointment/new-appointment.component';
 import { RegisterComponent } from './register/register.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path:"feedbackUser", component:FeedbackComponent},
   {path:"checkAppointments", component:CheckAppointmentsComponent},
   {path:'garageAreas', component:GarageAreasComponent},
-  {path:'feedbackAdmin', component:FeedbackAdminComponent}
+  {path:'feedbackAdmin', component:FeedbackAdminComponent},
+  {path:'reset', component:ResetPasswordComponent}
 ];
 
 @NgModule({

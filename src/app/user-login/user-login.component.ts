@@ -21,4 +21,7 @@ export class UserLoginComponent implements OnInit {
   onUserLoginClick(){
     this.router.navigateByUrl('/user');
   }
+  onClickReset(){
+    this.router.navigateByUrl('/reset');
+  }
 }
