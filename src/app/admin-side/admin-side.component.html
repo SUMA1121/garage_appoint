@@ -11,30 +11,31 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-               <h3>User</h3>
+               <h3>Admin</h3>
             </div>
     
             <ul class="list-unstyled components">
                <br>
+                
                 <li>
-                    <a href="#">Home</a>
-                </li>
-                <br>
-                <br>
-                <li>
-                    <a [routerLink]="" (click)="onClickBookAppointment()">Book New Appointment</a>
+                    <a [routerLink]="" (click)="onClickUserData()">User Data</a>
                     
                 </li>
                 <br>
                 <br>
                 <li>
-                    <a [routerLink]="" (click)="onClickCheckAppointments()">Check Appointments</a>
+                    <a [routerLink]="" (click)="onClickAppointmentsBooked()">Appointments Booked</a>
                 </li>
                 <br><br>
-                
-                
+                <li>
+                    <a [routerLink]="" (click)="onClickCancelAppointments()">Cancel Appointments</a>
+                </li>
+                <br><br>
+                <li>
+                    <a [routerLink]="" >Feedback</a>
+                </li>
             </ul>
-            
+            <br><br><br>
     
             
         </nav>

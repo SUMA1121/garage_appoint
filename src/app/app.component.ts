@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Garage_management';
-  myimage:string = "https://www.familyhandyman.com/wp-content/uploads/2020/12/GettyImages-1175908367.jpg";
-  myname(){
-    return "suma";
-  }
+
+  
 }

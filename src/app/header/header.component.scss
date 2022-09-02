@@ -1,3 +1,28 @@
-.navbar navbar-expand-lg bg-light{
-    background-color: rgb(91, 192, 222);
+
+a{
+    text-decoration: none;
+    margin-left : 5rem;
+    margin-right: 5rem;
+    float: right;
+    
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+div{
+  background-color: powderblue;
+  color: black;
+  font-size: 1.5rem;
+  
+ 
+  
+  
+}
+body{
+  background-image: url("https://www.familyhandyman.com/wp-content/uploads/2020/12/GettyImages-1175908367.jpg");
+  background-size: cover;
+  height: 100vh;
+  width:100vw
 }
