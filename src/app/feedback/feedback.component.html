@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Please Share us Your Experience</h1>
-    <div class="stars">
+    
+    <div class="stars" *ngIf="show">
+      <h1>Feedback</h1>
         <form action="">
           <input class="star star-5" id="star-5" type="radio" name="star"/>
           <label class="star star-5" for="star-5"></label>
@@ -21,9 +22,11 @@
           <label class="star star-2" for="star-2"></label>
           <input class="star star-1" id="star-1" type="radio" name="star"/>
           <label class="star star-1" for="star-1"></label>
-         <button class="btn btn-info" (click)="thankYou()">submit</button>
-         <h1>{{thankyou}}</h1>
+         <textarea rows="3" cols="30"></textarea>
+         <button class="btn btn-info" (click)="showThankYou()">submit</button>
+         
         </form>
       </div>
+      <h1>{{thankyou}}</h1>
 </body>
 </html>

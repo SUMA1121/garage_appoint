@@ -20,5 +20,7 @@ export class AdminSideComponent implements OnInit {
   onClickCancelAppointments(){
     this.router.navigateByUrl('cancelAppointments')
   }
-  
+  onClickFeedback(){
+    this.router.navigateByUrl('feedbackAdmin')
+  }
 }

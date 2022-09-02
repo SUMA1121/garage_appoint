@@ -24,7 +24,7 @@ export class NewAppointmentComponent implements OnInit {
     this.disable=false;
   }
   showFeedback(){
-    this.router.navigateByUrl('feedbackAdmin');
+    this.router.navigateByUrl('feedbackUser');
   
   }
 }

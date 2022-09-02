@@ -5,7 +5,9 @@ import { AdminSideComponent } from './admin-side/admin-side.component';
 import { AppointmentsBookedComponent } from './appointments-booked/appointments-booked.component';
 import { CancelComponent } from './cancel/cancel.component';
 import { CheckAppointmentsComponent } from './check-appointments/check-appointments.component';
+import { FeedbackAdminComponent } from './feedback-admin/feedback-admin.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { GarageAreasComponent } from './garage-areas/garage-areas.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NewAppointmentComponent } from './new-appointment/new-appointment.component';
 import { RegisterComponent } from './register/register.component';
@@ -22,8 +24,10 @@ const routes: Routes = [
  {path:"userData", component:UserDataComponent},
   {path:"appointmentsBooked", component:AppointmentsBookedComponent},
   {path:"cancelAppointments", component:CancelComponent},
-  {path:"feedbackAdmin", component:FeedbackComponent},
-  {path:"checkAppointments", component:CheckAppointmentsComponent}
+  {path:"feedbackUser", component:FeedbackComponent},
+  {path:"checkAppointments", component:CheckAppointmentsComponent},
+  {path:'garageAreas', component:GarageAreasComponent},
+  {path:'feedbackAdmin', component:FeedbackAdminComponent}
 ];
 
 @NgModule({

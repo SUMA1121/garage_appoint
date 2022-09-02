@@ -12,7 +12,7 @@ export class NavigationComponent implements OnInit {
   ngOnInit(): void {
   }
   onClickBookAppointment(){
-    this.router.navigateByUrl('/book')
+    this.router.navigateByUrl('/garageAreas')
   }
   onClickCheckAppointments(){
     this.router.navigateByUrl('checkAppointments');

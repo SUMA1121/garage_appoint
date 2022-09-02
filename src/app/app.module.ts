@@ -19,6 +19,7 @@ import { CancelComponent } from './cancel/cancel.component';
 import { AppointmentsBookedComponent } from './appointments-booked/appointments-booked.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { CheckAppointmentsComponent } from './check-appointments/check-appointments.component';
+import { FeedbackAdminComponent } from './feedback-admin/feedback-admin.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { CheckAppointmentsComponent } from './check-appointments/check-appointme
     AppointmentsBookedComponent,
     FeedbackComponent,
     CheckAppointmentsComponent,
+    FeedbackAdminComponent,
     
   ],
   imports: [
