@@ -14,16 +14,14 @@ export class UserLoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  data:any;
+ 
   getData(){
     console.log(this.userLoginForm.value)
-    
+    this.show=false;
+    this.router.navigateByUrl("/userLogin/user/");
   }
   show=true
-  onUserLoginClick(){
-    this.show=false;
-    
-  }
+  
   onClickReset(){
     this.router.navigateByUrl('/reset');
   }

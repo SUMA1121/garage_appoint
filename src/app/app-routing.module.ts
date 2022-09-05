@@ -19,7 +19,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 
 const routes: Routes = [
   {path:'', component:HeaderComponent},
- {path:"userLogin", component:UserLoginComponent, children:[{path:"user", component:NavigationComponent, children:[ {path:'garageAreas', component:GarageAreasComponent, children:[{path:"book", component:NewAppointmentComponent, children:[  {path:"feedbackUser", component:FeedbackComponent}]}]}, {path:"checkAppointments", component:CheckAppointmentsComponent}]}]},
+ {path:"userLogin", component:UserLoginComponent, children:[{path:'reset', component:ResetPasswordComponent},{path:"user", component:NavigationComponent, children:[ {path:'garageAreas', component:GarageAreasComponent, children:[{path:"book", component:NewAppointmentComponent, children:[  {path:"feedbackUser", component:FeedbackComponent}]}]}, {path:"checkAppointments", component:CheckAppointmentsComponent}]}]},
  {path:"adminLogin", component:AdminLoginComponent, children: [{path:"admin", component:AdminSideComponent, children:[ {path:"userData", component:UserDataComponent},  {path:"cancelAppointments", component:CancelComponent},{path:"appointmentsBooked", component:AppointmentsBookedComponent},  {path:'feedbackAdmin', component:FeedbackAdminComponent}]}]},
  {path:"register",component:RegisterComponent},
 
@@ -32,7 +32,7 @@ const routes: Routes = [
  
  
 //   {path:'feedbackAdmin', component:FeedbackAdminComponent},
-  {path:'reset', component:ResetPasswordComponent},
+  // {path:'reset', component:ResetPasswordComponent},
   {path:'', component:HeaderComponent}
 
 ];

@@ -12,17 +12,21 @@
   <router-outlet></router-outlet>
   <div *ngIf="show">
     <br><br>
-    <h1>Admin login</h1>
+    <h1>User login</h1>
 
-    <form action="" #login="ngForm" (ngSubmit)="getData(login.value)">
-
-      Enter your Name: <input type="email" ngModel name="email"><br>
-
-      Enter your password: <input type="password" ngModel name="password"><br>
-      <button type="submit" class="btn btn-primary" [routerLink]="['admin']" (click)="onClickAdminLogin()">Login</button>
-
-    </form>
-  </div>
+    <form [formGroup]="adminLoginForm" (ngSubmit)="getData()">
+    
+    Enter your Email Id:      <input type="email" name="email" formControlName="email"><br>
+    <span *ngIf="email && email.invalid && email.touched">This Field is not valid</span><br>
+    Enter your password:      <input type="password" name="password" formControlName="password"><br>
+    <span *ngIf="password && password.invalid && password.touched">This Field is not valid</span><br>
+    <button type="submit" class="btn btn-primary" [disabled]="adminLoginForm.invalid" >Login</button><br>
+  
+  
+  
+    
+</form>
+</div>
     
     
 

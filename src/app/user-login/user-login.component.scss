@@ -5,7 +5,7 @@ input{
 form{
     background: powderblue;
     width: 500px;
-    height: 200px;text-align: center;
+    height: 300px;text-align: center;
     margin-left: 500px;
     margin-bottom: 100px;
    
@@ -23,4 +23,7 @@ body{
 a{
     cursor: pointer;
     text-decoration: underline;
+}
+span{
+    color: red;
 }

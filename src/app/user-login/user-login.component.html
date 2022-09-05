@@ -9,7 +9,7 @@
 <body>
 
 
-  
+  <router-outlet></router-outlet>
   <div *ngIf="show">
     <br><br>
     <h1>User login</h1>
@@ -20,14 +20,14 @@
     <span *ngIf="email && email.invalid && email.touched">This Field is not valid</span><br>
     Enter your password:      <input type="password" name="password" formControlName="password"><br>
     <span *ngIf="password && password.invalid && password.touched">This Field is not valid</span><br>
-    <button type="submit" class="btn btn-primary" [disabled]="userLoginForm.invalid" routerLink="user"  (click)="onUserLoginClick()">Login</button><br>
-    <a [routerLink]="" (click)="onClickReset()">Forgot Password</a>
+    <button type="submit" class="btn btn-primary" [disabled]="userLoginForm.invalid" >Login</button><br>
+    <a routerLink="/userLogin/reset">Forgot Password</a>
   
   
     
 </form>
 </div>
-<router-outlet></router-outlet>
+
 
 
 </body>
