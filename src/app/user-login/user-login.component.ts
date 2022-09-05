@@ -14,29 +14,23 @@ export class UserLoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
- 
+
   getData(){
-    console.log(this.userLoginForm.value)
-    this.show=false;
-    this.router.navigateByUrl("/userLogin/user/");
-  }
-  show=true
+  console.log(this.userLoginForm.value)
   
-  onClickReset(){
-    this.router.navigateByUrl('/reset');
-  }
-  userLoginForm=new FormGroup({
-    
-    email:new FormControl('', [Validators.required, Validators.email]),
-    password:new FormControl('', [Validators.required, Validators.minLength(6)])
-  })
-  get email(){
-    return this.userLoginForm.get('email')
-  }
+  this.router.navigateByUrl("/userLogin/user");
+}
 
+userLoginForm=new FormGroup({
   
+  email:new FormControl('', [Validators.required, Validators.email]),
+  password:new FormControl('', [Validators.required, Validators.minLength(6)])
+})
+get email(){
+  return this.userLoginForm.get('email')
+}
+get password(){
+  return this.userLoginForm.get('password')
+}
 
-  get password(){
-    return this.userLoginForm.get('password')
-  }
 }

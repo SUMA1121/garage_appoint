@@ -1,6 +1,7 @@
 div.stars {
     width: 270px;
     display: inline-block;
+    margin-left: 4;
   }
    
   input.star { display: none; }
@@ -9,7 +10,7 @@ div.stars {
     float: right;
     padding: 10px;
     font-size: 36px;
-    color: #444;
+    color: white;
     transition: all .2s;
   }
    
@@ -37,4 +38,11 @@ div.stars {
     height: 100vh;
     width: 100vw;
     padding: 9rem;
+    color: white;
+    
+  }
+  form{
+    background-image: linear-gradient(135deg, #29323c 10%, #485563 100%);
+    text-align: center;
+  
   }

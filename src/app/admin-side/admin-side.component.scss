@@ -59,7 +59,7 @@ a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: rgb(91, 192, 222);
+    background: #3F729B;
     color: #fff;
     transition: all 0.3s;
 }
@@ -70,7 +70,7 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: rgb(91, 192, 222);
+    background: #3F729B;
 }
 
 #sidebar ul.components {
@@ -90,14 +90,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: rgb(91, 192, 222);
+    color: #3F729B;
     background: #fff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: rgb(91, 192, 222);
+    background: #3F729B;
 }
 
 a[data-toggle="collapse"] {
@@ -115,7 +115,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: rgb(91, 192, 222);
+    background: #3F729B;
 }
 
 ul.CTAs {
@@ -132,7 +132,7 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: rgb(91, 192, 222);
+    color: #3F729B;
 }
 
 a.article,
@@ -150,7 +150,7 @@ a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
-    background: url("https://www.familyhandyman.com/wp-content/uploads/2020/12/GettyImages-1175908367.jpg");
+   background-image: url("https://wallpapercave.com/wp/wp7550112.jpg");
     background-size: cover;
 }
 
@@ -169,6 +169,4 @@ a.article:hover {
         display: none;
     }
 }
-a{
-  cursor: pointer;
-}
+

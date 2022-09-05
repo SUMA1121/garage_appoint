@@ -3,5 +3,35 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+ 
+    background-image: url("https://wallpapercave.com/wp/wp7550112.jpg");
+    background-size: cover;
+    color: white;
+    font-family: 'Dancing Script', cursive; 
+
+}
+form{
+    background-color: #3F729B;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    
+    font-size: x-large;
+    font-family: 'Dancing Script', cursive; 
+    font-weight: bold;
+}
+h1{
+    font-family: 'Dancing Script', cursive; 
+}

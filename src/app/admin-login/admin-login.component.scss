@@ -1,25 +1,35 @@
 input{
-    margin: 1rem;
+    height: 2.5rem;
+    width: 20rem;
 }
 
 form{
-    background: powderblue;
-    width: 500px;
-    height: 200px;text-align: center;
+    
+    width: 700px;
+    height: 250px;text-align: center;
+    padding-top: 2rem;
     margin-left: 500px;
     margin-bottom: 100px;
+    color: white;
+    background-color: #3F729B;
+    border-radius: 25px;
    
     
 }
 h1{
-    text-align: center;margin-top: 2rem;color: white;
+    text-align: center;margin-top: 4rem;color: white;font-weight: bold;font-family: 'Dancing Script', cursive;font-size: xx-large;
 }
 body{
-    background-image: url("https://www.familyhandyman.com/wp-content/uploads/2020/12/GettyImages-1175908367.jpg");
+    
     background-size: cover;
     height: 100vh;
     width:100vw
 }
+a{
+    cursor: pointer;
+    text-decoration: underline;
+}
 span{
     color: red;
+    font-size: 1rem;
 }

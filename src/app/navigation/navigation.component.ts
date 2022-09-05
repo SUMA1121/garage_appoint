@@ -19,6 +19,6 @@ export class NavigationComponent implements OnInit {
   onClickCheckAppointments(){
     this.show=false
   }
-  
+
 
 }

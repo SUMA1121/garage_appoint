@@ -11,9 +11,6 @@ export class GarageAreasComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  show=true
-  onClickGarageArea(){
-    this.show=false
-  }
+ 
 
 }

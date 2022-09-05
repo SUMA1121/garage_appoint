@@ -8,9 +8,11 @@
 </head>
 <body>
 
-
   <router-outlet></router-outlet>
-  <div *ngIf="show">
+
+
+
+  <div>
     <br><br>
     <h1>User login</h1>
 
@@ -21,12 +23,15 @@
     Enter your password:      <input type="password" name="password" formControlName="password"><br>
     <span *ngIf="password && password.invalid && password.touched">This Field is not valid</span><br>
     <button type="submit" class="btn btn-primary" [disabled]="userLoginForm.invalid" >Login</button><br>
-    <a routerLink="/userLogin/reset">Forgot Password</a>
+  </form>
+</div>
+
+  
   
   
     
-</form>
-</div>
+
+
 
 
 

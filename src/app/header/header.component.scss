@@ -4,7 +4,11 @@ a{
     margin-left : 5rem;
     margin-right: 5rem;
     float: right;
-    
+   color:white;
+    font-size: x-large;
+    font-family: 'Dancing Script', cursive; 
+    font-weight: bold;
+
 }
 .center {
   display: flex;
@@ -12,17 +16,24 @@ a{
 }
 
 div{
-  background-color: powderblue;
-  color: black;
-  font-size: 1.5rem;
+  background-color: #3F729B;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+ 
+  font-size: x-large;
+  font-family: 'Dancing Script', cursive; 
+  font-weight: bold;
   
  
   
   
 }
 body{
-  background-image: url("https://www.familyhandyman.com/wp-content/uploads/2020/12/GettyImages-1175908367.jpg");
+  
   background-size: cover;
   height: 100vh;
-  width:100vw
+  width:100vw;
+  font-family: 'Dancing Script', cursive; 
+
 }
