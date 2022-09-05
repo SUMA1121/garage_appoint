@@ -11,8 +11,9 @@ export class GarageAreasComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  show=true
   onClickGarageArea(){
-    this.router.navigateByUrl('book')
+    this.show=false
   }
 
 }

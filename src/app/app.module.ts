@@ -22,6 +22,7 @@ import { CheckAppointmentsComponent } from './check-appointments/check-appointme
 import { FeedbackAdminComponent } from './feedback-admin/feedback-admin.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -50,7 +51,9 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

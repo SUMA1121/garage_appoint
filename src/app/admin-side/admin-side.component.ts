@@ -11,16 +11,21 @@ export class AdminSideComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  show=true
   onClickUserData(){
-    this.router.navigateByUrl('userData')
+    this.router.navigateByUrl('/adminLogin/admin/userData')
+    this.show=false
   }
   onClickAppointmentsBooked(){
-    this.router.navigateByUrl('appointmentsBooked')
+    this.router.navigateByUrl('/adminLogin/admin/appointmentsBooked')
+    this.show=false
   }
   onClickCancelAppointments(){
-    this.router.navigateByUrl('cancelAppointments')
+    this.router.navigateByUrl('/adminLogin/admin/cancelAppointments')
+    this.show=false
   }
   onClickFeedback(){
-    this.router.navigateByUrl('feedbackAdmin')
+    this.router.navigateByUrl('/adminLogin/admin/feedbackAdmin')
+    this.show=false
   }
 }

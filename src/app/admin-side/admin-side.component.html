@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
+    <router-outlet></router-outlet>
+    <div class="wrapper" >
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -34,8 +35,12 @@
                 <li>
                     <a [routerLink]="" (click)="onClickFeedback()" >Feedback</a>
                 </li>
+                <br><br>
+                <li>
+                    <a href="">Logout</a>
+                </li>
             </ul>
-            <br><br><br>
+           
     
             
         </nav>

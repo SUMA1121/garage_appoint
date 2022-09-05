@@ -7,38 +7,40 @@
     <title>Document</title>
 </head>
 <body>
-    <br><br>
-    <h1>Book an Appointment</h1>
-
-<form action="" #login="ngForm" (ngSubmit)="getData(login.value)">
-    Select Date:    <input type="date" ngModel name="name"><br>
-    Select Time:       <select name="month" id="select_languages">
-        <option value="">Select Time</option>
-        <option value="slot1">9.00Am-10.00Am</option>
-        <option value="slot2">10.00Am-11.00Am</option>
-        <option value="slot3" >11.00Am-12.00Am</option>
-        <option value="slot4">12.00Am-1.00pm</option>
-        <option value="slot5">1.00Pm-2.00PM</option>
-        <option value="slot6">2.00Pm-3.00Am</option>
-        <option value="slot7">3.00Pm-4.00Am</option>
-        <option value="slot8" >4.00Pm-5.00Am</option>
-        <option value="slot7">5.00Pm-6.00Am</option>
-        <option value="slot8" >6.00Pm-7.00Am</option>
-        
-        
-    </select><br><br><br>
-    Select Vehile:      <select name="month" id="select_languages">
-        <option value="">Select Vehicle</option>
-        <option value="car">car</option>
-        <option value="bike">bike</option>
-        <option value="scooter" >scooter</option>
-        </select><br>
-
-    <button type="submit" class="btn btn-primary" (click)="isAvailable()">check</button>
-    <h6>{{checkAvail}}</h6>
-
-    <button type="button" class="btn btn-success" [disabled]=disable (click)="showFeedback()">Book</button>
-</form>
+    <router-outlet></router-outlet>
+    <div *ngIf="show"><br><br>
+        <h1>Book an Appointment</h1>
+    
+    <form action="" #login="ngForm" (ngSubmit)="getData(login.value)">
+        Select Date:    <input type="date" ngModel name="name"><br>
+        Select Time:       <select name="month" id="select_languages">
+            <option value="">Select Time</option>
+            <option value="slot1">9.00Am-10.00Am</option>
+            <option value="slot2">10.00Am-11.00Am</option>
+            <option value="slot3" >11.00Am-12.00Am</option>
+            <option value="slot4">12.00Am-1.00pm</option>
+            <option value="slot5">1.00Pm-2.00PM</option>
+            <option value="slot6">2.00Pm-3.00Am</option>
+            <option value="slot7">3.00Pm-4.00Am</option>
+            <option value="slot8" >4.00Pm-5.00Am</option>
+            <option value="slot7">5.00Pm-6.00Am</option>
+            <option value="slot8" >6.00Pm-7.00Am</option>
+            
+            
+        </select><br><br><br>
+        Select Vehile:      <select name="month" id="select_languages">
+            <option value="">Select Vehicle</option>
+            <option value="car">car</option>
+            <option value="bike">bike</option>
+            <option value="scooter" >scooter</option>
+            </select><br>
+    
+        <button type="submit" class="btn btn-primary" (click)="isAvailable()">check</button>
+        <h6>{{checkAvail}}</h6>
+    
+        <button type="button" class="btn btn-success" [disabled]=disable [routerLink]="" (click)="showFeedback()">book</button>
+    </form></div>
+    
 
     
 

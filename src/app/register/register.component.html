@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  
+
   <br>
-<h1 >Register</h1>
-<form action="" #login="ngForm" (ngSubmit)="getData(login.value)" >
-  Enter your Name:       <input type="text" ngModel name="name"><br>
-  Enter your Address:       <input type="text" ngModel name="name"><br>
-  Enter your Email:       <input type="email" ngModel name="email"><br>
-  Enter your Phone:        <input type="tel" ngModel name="number"><br>
-  Enter your password:    <input type="password" ngModel name="password"><br>
-  <button type="submit" class="btn btn-primary" [routerLink]="" (click)="onClickRegister()">Register</button>
-</form>
+  <h1>Register</h1>
+  <form [formGroup]="registerForm" (ngSubmit)="getData()">
+    Enter your Name: <input type="text" name="name" formControlName="name"><br>
+    <span *ngIf="name && name.invalid && name.touched">This Field is not valid</span><br>
+    Enter your Address: <input type="text" name="address" formControlName="address"><br>
+    <span *ngIf="address && address.invalid && address.touched">This Field is not valid</span><br>
+    Enter your Email: <input type="email" name="email" formControlName="email"><br>
+    <span *ngIf="email && email.invalid && email.touched">This Field is not valid</span><br>
+    Enter your Phone: <input type="tel" name="phone" formControlName="phone"><br>
+    <span *ngIf="phone && phone.invalid && phone.touched">This Field is not valid</span><br>
+    Enter your password: <input type="password" name="password" formControlName="password"><br>
+    <span *ngIf="password && password.invalid && password.touched">This Field is not valid</span><br>
+    <button type="submit" [disabled]="registerForm.invalid" class="btn btn-primary">Register</button>
+  </form>
 </body>
+
 </html>

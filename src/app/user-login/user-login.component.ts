@@ -1,27 +1,44 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
+
 @Component({
   selector: 'app-user-login',
   templateUrl: './user-login.component.html',
   styleUrls: ['./user-login.component.scss']
 })
 export class UserLoginComponent implements OnInit {
-
+  
   constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
   data:any;
-  getData(val:any){
-    this.data=val;
-    console.log(this.data);
+  getData(){
+    console.log(this.userLoginForm.value)
     
   }
-
+  show=true
   onUserLoginClick(){
-    this.router.navigateByUrl('/user');
+    this.show=false;
+    
   }
   onClickReset(){
     this.router.navigateByUrl('/reset');
+  }
+  userLoginForm=new FormGroup({
+    
+    email:new FormControl('', [Validators.required, Validators.email]),
+    password:new FormControl('', [Validators.required, Validators.minLength(6)])
+  })
+  get email(){
+    return this.userLoginForm.get('email')
+  }
+
+  
+
+  get password(){
+    return this.userLoginForm.get('password')
   }
 }

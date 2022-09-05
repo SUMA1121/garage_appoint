@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
+    <router-outlet></router-outlet>
+    <div class="wrapper" *ngIf="show"  >
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -15,22 +16,23 @@
             </div>
     
             <ul class="list-unstyled components">
-               <br>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <br>
+               
                 <br>
                 <li>
-                    <a [routerLink]="" (click)="onClickBookAppointment()">Book New Appointment</a>
+                    <a  routerLink='garageAreas' (click)="onClickBookAppointment()">Book New Appointment</a>
                     
                 </li>
                 <br>
                 <br>
                 <li>
-                    <a [routerLink]="" (click)="onClickCheckAppointments()">Check Appointments</a>
+                    <a routerLink="checkAppointments" (click)="onClickCheckAppointments()">Check Appointments</a>
                 </li>
-                <br><br>
+                <br>
+                <br>
+                <li>
+                    <a href="" >Logout</a>
+                </li>
+                <br>
                 
                 
             </ul>

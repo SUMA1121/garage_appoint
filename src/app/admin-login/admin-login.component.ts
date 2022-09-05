@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-admin-login',
   templateUrl: './admin-login.component.html',
@@ -17,8 +18,10 @@ export class AdminLoginComponent implements OnInit {
     console.log(this.data);
     
   }
+  show = true;
   onClickAdminLogin(){
-    this.router.navigateByUrl('admin');
+    this.show=false
+    
   }
 
 }

@@ -23,8 +23,9 @@ export class NewAppointmentComponent implements OnInit {
     this.checkAvail="Available"
     this.disable=false;
   }
+  show=true
   showFeedback(){
-    this.router.navigateByUrl('feedbackUser');
-  
+    this.router.navigateByUrl('/userLogin/user/garageAreas/book/feedbackUser')
+    this.show=false
   }
 }
