@@ -20,12 +20,6 @@ export class FeedbackComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     
   }
-  show=true;
-  thankyou=""
-  showThankYou(){
-    this.show=false;
-    this.thankyou="Thank You"
-  }
   
 
 }

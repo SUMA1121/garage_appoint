@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
     
   }
   onClickRegister(){
-    this.router.navigateByUrl('userLogin')
+    this.router.navigateByUrl('/userLogin')
   }
 
   registerForm=new FormGroup({

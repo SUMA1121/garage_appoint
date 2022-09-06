@@ -3,13 +3,12 @@
 */
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body {
-    font-family: 'Poppins', sans-serif;
+body { font-family: 'Dancing Script', cursive; 
     background: #fafafa;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Dancing Script', cursive; 
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
@@ -169,4 +168,14 @@ a.article:hover {
         display: none;
     }
 }
+a{
+    font-family: 'Dancing Script', cursive; 
+}
+h3{
+    font-family: 'Dancing Script', cursive; 
+}
+li{
+    font-family: 'Dancing Script', cursive; 
+}
+
 
