@@ -23,7 +23,7 @@
     <span *ngIf="phone && phone.invalid && phone.touched">This Field is not valid</span><br>
     Enter your password: <input type="password" name="password" formControlName="password"><br>
     <span *ngIf="password && password.invalid && password.touched">This Field is not valid</span><br>
-    <button type="submit" [disabled]="registerForm.invalid" class="btn btn-primary">Register</button>
+    <button type="submit" [disabled]="registerForm.invalid" class="btn btn-primary" (click)="onClickRegister()">Register</button>
   </form>
   <h1></h1>
 </body>
